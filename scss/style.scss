@@ -1,24 +1,4 @@
+@import "vendors/bootstrap/bootstrap/variables";
+@import "vendors/bootstrap/bootstrap/mixins";
 @import "variables";
-body{
-	background-image:url(../images/Background.png);
-
-	.header-line{
-		margin: 0px;
-		border: none;
-		height:10px;
-		background-color:$default-color;
-	}
-
-	> .container{
-		background-color: $container-color;
-		margin: 0 auto;
-
-		> .logo{
-			padding: 50px 15px;
-		}
-
-		> .header-line{
-			
-		}
-	}
-}
+@import "header";

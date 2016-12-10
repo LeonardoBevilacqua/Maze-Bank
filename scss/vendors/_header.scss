@@ -1,0 +1,51 @@
+body{
+	background-image:url(../images/Background.png);
+
+	hr{		
+		border: none;
+		padding: 0;
+		height:10px;
+		background-color:$default-color;
+	}
+	.header-line{
+		margin: 0px;
+	}
+
+	> header{
+		background-color: $container-color;
+		margin: 0 auto;
+		> .content-logo{
+			@include make-row;
+				
+			> .logo-container{
+				@include make-xs-column(8);
+				@include make-sm-column(5);
+				@include make-md-column(5);
+				@include make-xs-column-offset(2);
+				@include make-sm-column-offset(1);
+				@include make-md-column-offset(1);
+				padding: 15px 0 0;
+				> .logo{
+					padding:0px;
+				}
+			}
+		}
+		> .content-line{
+			@include make-row;
+			> .line-bottom-container{
+				@include make-xs-column(8);
+				@include make-sm-column(10);
+				@include make-md-column(10);
+				@include make-xs-column-offset(2);
+				@include make-sm-column-offset(1);
+				@include make-md-column-offset(1);
+
+				padding: 0;
+
+				>hr{
+					height: 5px;
+				}
+			}
+		}
+	}	
+}
