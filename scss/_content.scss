@@ -48,10 +48,10 @@ html,body{
 		}
 
 		> .content-welcome{
-			@include make-xs-column(6);
+			@include make-xs-column(8);
 			@include make-sm-column(6);
 			@include make-md-column(4);
-			@include make-xs-column-offset(3);
+			@include make-xs-column-offset(2);
 			@include make-sm-column-offset(3);
 			@include make-md-column-offset(4);
 			padding:0;
@@ -59,10 +59,10 @@ html,body{
 		}
 
 		>.content-button{
-			@include make-xs-column(10);
+			@include make-xs-column(12);
 			@include make-sm-column(6);
 			@include make-md-column(4);
-			@include make-xs-column-offset(1);
+			@include make-xs-column-offset(0);
 			@include make-sm-column-offset(3);
 			@include make-md-column-offset(4);
 			padding:0;
