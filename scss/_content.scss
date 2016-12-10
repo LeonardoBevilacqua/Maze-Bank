@@ -1,0 +1,52 @@
+html,body{
+	height:100%;
+	> .container-content{
+		height:100%;
+		background-color:$container-color;
+
+		> .content-welcome{
+			@include make-xs-column(6);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+			@include make-xs-column-offset(3);
+			@include make-sm-column-offset(3);
+			@include make-md-column-offset(4);
+			padding:0;
+			margin-top:130px;
+			> p{
+				text-align:center;
+				font: bold 22px arial,sans-serif;
+			}
+		}
+		>.content-button{
+			@include make-xs-column(10);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+			@include make-xs-column-offset(1);
+			@include make-sm-column-offset(3);
+			@include make-md-column-offset(4);
+			padding:0;
+			text-align:center;
+			margin-top:80px;
+			> a,.btn-MazeBank{				
+				width: 300px;				
+				cursor: url('../images/pointer.png'), pointer;
+				background: #c15d60;
+				background: -moz-linear-gradient(top,  #c15d60 0%, #c15155 40%, #c3363d 100%);
+				background: -webkit-linear-gradient(top,  #c15d60 0%,#c15155 40%,#c3363d 100%);
+				background: linear-gradient(to bottom,  #c15d60 0%,#c15155 40%,#c3363d 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c15d60', endColorstr='#c3363d',GradientType=0 );
+				color: $container-color;
+				border: 2px solid #861b27;
+				&:hover{
+					background: #c3363d;
+					background: -moz-linear-gradient(top, #c3363d 0%, #c15155 60%, #c15d60 100%);
+					background: -webkit-linear-gradient(top, #c3363d 0%,#c15155 60%,#c15d60 100%);
+					background: linear-gradient(to bottom, #c3363d 0%,#c15155 60%,#c15d60 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3363d', endColorstr='#c15d60',GradientType=0 );
+					border: 2px solid #000;
+				}
+			}
+		}
+	}	
+}
