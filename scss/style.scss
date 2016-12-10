@@ -10,7 +10,11 @@ html,body{
 		background-color:$container-color;
 
 		> .content-welcome{
+			@include make-xs-column(6);
+			@include make-sm-column(6);
 			@include make-md-column(4);
+			@include make-xs-column-offset(3);
+			@include make-sm-column-offset(3);
 			@include make-md-column-offset(4);
 			padding:0;
 			margin-top:130px;
@@ -20,13 +24,16 @@ html,body{
 			}
 		}
 		>.content-button{
+			@include make-xs-column(10);
+			@include make-sm-column(6);
 			@include make-md-column(4);
+			@include make-xs-column-offset(1);
+			@include make-sm-column-offset(3);
 			@include make-md-column-offset(4);
 			padding:0;
 			text-align:center;
 			margin-top:80px;
-			> a,.btn-MazeBank{
-				
+			> a,.btn-MazeBank{				
 				width: 300px;				
 				cursor: url('../images/pointer.png'), pointer;
 				background: #c15d60;
