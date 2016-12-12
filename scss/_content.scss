@@ -15,43 +15,6 @@ html,body{
 		height:100%;
 		background-color:$container-color;
 
-		> .content-line{
-			@include make-row;	
-			> .nav-container{
-				@include make-xs-column(8);
-				@include make-sm-column(10);
-				@include make-md-column(10);
-				@include make-xs-column-offset(2);
-				@include make-sm-column-offset(1);
-				@include make-md-column-offset(1);
-				padding: 0;
-
-				> .navbar-default{
-					min-height:60px;
-					background: #c3363d;
-					background: -moz-linear-gradient(top, #c3363d 0%, #c15155 60%, #c15d60 100%);
-					background: -webkit-linear-gradient(top, #c3363d 0%,#c15155 60%,#c15d60 100%);
-					background: linear-gradient(to bottom, #c3363d 0%,#c15155 60%,#c15d60 100%);
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3363d', endColorstr='#c15d60',GradientType=0 );
-					border-radius: 0;
-					border:none;
-
-					> p{
-						color: $container-color;
-						font-weight: normal;
-						margin-bottom: 5px;						
-					}
-
-					.user{
-						padding-left: 25px;
-						padding-top: 5px;
-						margin-bottom: 0;	
-						text-align: left;
-					}
-				}
-			}			
-		}
-
 		> .content-welcome{
 			@include make-xs-column(8);
 			@include make-sm-column(6);
@@ -83,7 +46,7 @@ html,body{
 			}
 		}
 
-		>.return-button{
+		.return-button{
 			margin-top: 50px;
 			@include make-xs-column(12);
 			@include make-sm-column(6);
