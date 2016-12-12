@@ -18,10 +18,10 @@ body{
 			@include make-row;
 				
 			> .logo-container{
-				@include make-xs-column(8);
+				@include make-xs-column(9);
 				@include make-sm-column(5);
 				@include make-md-column(5);
-				@include make-xs-column-offset(2);
+				@include make-xs-column-offset(1);
 				@include make-sm-column-offset(1);
 				@include make-md-column-offset(1);
 				padding: 15px 0 0;
